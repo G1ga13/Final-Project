@@ -526,6 +526,9 @@ body {
 }
 
 .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(245, 211, 171, 1);
 }
 
@@ -552,44 +555,8 @@ body {
   letter-spacing: 0px;
 }
 
-/* ჭრაააააააააააააააააა */
-
-.menu-grid {
-  display: grid;
-  gap: 24px;
-
-  /* 2 სვეტი */
-  grid-template-columns: 2fr 1fr;
-
-  /* 3 რიგი */
-  grid-template-rows: 260px 200px 200px;
-
-  grid-template-areas:
-    "big  topR"
-    "big  midR"
-    "botL botM";
-}
-
-/* პოზიციები */
-.card--big {
-  grid-area: big;
-}
-.card--top-right {
-  grid-area: topR;
-}
-.card--mid-right {
-  grid-area: midR;
-}
-.card--bottom-left {
-  grid-area: botL;
-}
-.card--bottom-mid {
-  grid-area: botM;
-}
-
-/* უბრალოდ ვიზუალი */
-.card {
-  background: #ccc;
-  border-radius: 16px;
-  overflow: hidden;
+.grid_container {
+  width: 1170px;
+  height: 928px;
+  border: 1px solid red;
 }
