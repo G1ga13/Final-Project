@@ -479,9 +479,117 @@ body {
 }
 
 .video {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
   height: 480px;
   border: 1px solid red;
   background-color: rgba(23, 27, 27, 1);
   position: relative;
+}
+
+.video_text > p {
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.video_text > h1 {
+  font-family: "Ultra";
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.tape {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.video_line_top {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.video_line_bot {
+  position: absolute;
+  bottom: 0px;
+}
+
+.products {
+  background-color: rgba(245, 211, 171, 1);
+}
+
+.products_text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.products_text > p {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.products_text > h1 {
+  font-family: "Ultra";
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0px;
+}
+
+/* ჭრაააააააააააააააააა */
+
+.menu-grid {
+  display: grid;
+  gap: 24px;
+
+  /* 2 სვეტი */
+  grid-template-columns: 2fr 1fr;
+
+  /* 3 რიგი */
+  grid-template-rows: 260px 200px 200px;
+
+  grid-template-areas:
+    "big  topR"
+    "big  midR"
+    "botL botM";
+}
+
+/* პოზიციები */
+.card--big {
+  grid-area: big;
+}
+.card--top-right {
+  grid-area: topR;
+}
+.card--mid-right {
+  grid-area: midR;
+}
+.card--bottom-left {
+  grid-area: botL;
+}
+.card--bottom-mid {
+  grid-area: botM;
+}
+
+/* უბრალოდ ვიზუალი */
+.card {
+  background: #ccc;
+  border-radius: 16px;
+  overflow: hidden;
 }
