@@ -484,7 +484,6 @@ body {
   align-items: center;
   width: 100%;
   height: 480px;
-  border: 1px solid red;
   background-color: rgba(23, 27, 27, 1);
   position: relative;
 }
@@ -515,9 +514,8 @@ body {
 }
 
 .tape {
-  width: 300px;
-  height: 300px;
-  border: 1px solid red;
+  width: 160px;
+  height: 160px;
 }
 
 .video_line_top {
@@ -532,6 +530,7 @@ body {
 }
 
 .products {
+  height: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,7 +541,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  border: 1px solid black;
   width: 81.3%;
   margin-top: 150px;
   margin-bottom: 69px;
@@ -569,7 +567,6 @@ body {
   display: grid;
   width: 1170px;
   height: 928px;
-  border: 1px solid red;
   grid-template-columns: 370px 370px 370px;
   grid-template-rows: 448px 448px;
   grid-template-areas:
@@ -584,22 +581,26 @@ body {
 
 .grid_container > div:nth-child(2) {
   grid-area: small;
+  background-image: url("./images/baking/grid_cupcake.webp");
+  background-size: cover;
 }
 
 .grid_container > div:nth-child(3) {
   grid-area: one;
+  background-image: url("./images/baking/grid_second_bread.jpg");
+  background-size: cover;
 }
 
 .grid_container > div:nth-child(4) {
   grid-area: two;
+  background-image: url("./images/baking/grid_biscuit.jpg");
+  background-size: cover;
 }
 
 .grid_container > div:nth-child(5) {
   grid-area: three;
-}
-
-.grid_container > div {
-  border: 1px solid black;
+  background-image: url("./images/baking/grid_brioche.jpg");
+  background-size: cover;
 }
 
 .main_grid {
@@ -608,6 +609,8 @@ body {
   justify-content: center;
   gap: 200px;
   padding-bottom: 33px;
+  background-image: url("./images/baking/grid_first_bread.jpg");
+  background-size: cover;
 }
 
 .main_grid_open {
@@ -687,5 +690,147 @@ body {
 }
 
 span {
+  color: white;
+}
+
+.explore {
+  margin-top: 64px;
+  width: 170px;
+  height: 48px;
+  top: 4432px;
+  left: 635px;
+  opacity: 1;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid rgba(23, 27, 27, 0.24);
+  cursor: pointer;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 2112px;
+}
+
+.process_header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 105px;
+}
+
+.process_header > p {
+  font-family: "Oswald";
+  font-weight: 250;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.process_header > h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+}
+
+.information {
+  position: relative;
+  display: flex;
+  margin-top: 69px;
+}
+
+.information > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 112px;
+  width: 284px;
+  height: 384px;
+  background-color: white;
+}
+
+.information > div > div > h2 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.information > div > div > p {
+  font-family: "DM Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.information > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 213px;
+}
+
+.info_number {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-right: 200px;
+}
+
+.information > div:hover {
+  background-color: rgba(158, 173, 141, 1);
+  transform: scale(1.083);
+  z-index: 10;
+}
+
+.information > div:hover .yellow_circle {
+  display: block;
+}
+
+.recipes_grid_header {
+  width: 617px;
+  margin-top: 235px;
+  margin-right: 500px;
+}
+
+.recipes_grid_header > p {
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.recipes_grid_header > h1 {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0px;
   color: white;
 }
