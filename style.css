@@ -489,6 +489,12 @@ body {
   position: relative;
 }
 
+.video_text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .video_text > p {
   font-family: "Oswald";
   font-weight: 300;
@@ -536,6 +542,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  border: 1px solid black;
+  width: 81.3%;
+  margin-top: 150px;
+  margin-bottom: 69px;
 }
 
 .products_text > p {
@@ -556,7 +566,126 @@ body {
 }
 
 .grid_container {
+  display: grid;
   width: 1170px;
   height: 928px;
   border: 1px solid red;
+  grid-template-columns: 370px 370px 370px;
+  grid-template-rows: 448px 448px;
+  grid-template-areas:
+    "big big small"
+    "one two three";
+  gap: 30px;
+}
+
+.grid_container > div:nth-child(1) {
+  grid-area: big;
+}
+
+.grid_container > div:nth-child(2) {
+  grid-area: small;
+}
+
+.grid_container > div:nth-child(3) {
+  grid-area: one;
+}
+
+.grid_container > div:nth-child(4) {
+  grid-area: two;
+}
+
+.grid_container > div:nth-child(5) {
+  grid-area: three;
+}
+
+.grid_container > div {
+  border: 1px solid black;
+}
+
+.main_grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 200px;
+  padding-bottom: 33px;
+}
+
+.main_grid_open {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main_grid_header {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.main_grid_close {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.price {
+  font-family: "Ultra";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: black;
+}
+
+.main_grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sub_grid {
+  display: flex;
+  align-items: end;
+}
+
+.sub_grid_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 150px;
+  width: 100%;
+  height: 25%;
+  background-color: white;
+}
+
+.product_name {
+  font-family: "Oswald";
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.product_sub_name {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+span {
+  color: white;
 }
