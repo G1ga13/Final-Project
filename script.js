@@ -20,3 +20,15 @@ up.addEventListener("click", () => {
     track.style.transform = `translateY(-${index * itemHeight}px)`;
   }
 });
+
+let exploreBtn = document.querySelector(".explore");
+let exploreMore = document.querySelector(".explore_more");
+
+exploreBtn.addEventListener("click", function () {
+  exploreMore.classList.toggle("hidden");
+  if (exploreMore.classList.contains("hidden")) {
+    exploreBtn.textContent = "EXPLORE";
+  } else {
+    exploreBtn.textContent = "SHOW LESS";
+  }
+});

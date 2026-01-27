@@ -514,8 +514,15 @@ body {
 }
 
 .tape {
-  width: 160px;
-  height: 160px;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.tape video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video_line_top {
@@ -530,7 +537,7 @@ body {
 }
 
 .products {
-  height: 1500px;
+  min-height: 1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -811,9 +818,13 @@ span {
 }
 
 .recipes_grid_header {
-  width: 617px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 620px;
   margin-top: 235px;
   margin-right: 500px;
+  border: 1px solid red;
 }
 
 .recipes_grid_header > p {
@@ -833,4 +844,194 @@ span {
   line-height: 64px;
   letter-spacing: 0px;
   color: white;
+}
+
+.explore_more {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 448px;
+  margin-top: 64px;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.explore_more > div {
+  width: 370px;
+  height: 448px;
+}
+
+.explore_more > div:nth-child(1) {
+  background-image: url("/images/person/first_spider_man.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.explore_more > div:nth-child(2) {
+  background-image: url("/images/person/middle_spider_man.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.explore_more > div:nth-child(3) {
+  background-image: url("/images/person/third_spider_men.jpg");
+  background-size: cover;
+}
+
+.playBtn {
+  position: absolute;
+}
+
+.recipes_grid {
+  margin-top: 69px;
+  display: grid;
+  width: 1170px;
+  height: 736px;
+  border: 1px solid red;
+  margin-left: 55px;
+
+  grid-template-columns: 570px 270px 270px;
+  grid-template-rows: 352px 352px;
+
+  column-gap: 30px;
+  row-gap: 32px;
+
+  grid-template-areas:
+    "big a b"
+    "big c d";
+}
+
+.recipes_grid > div {
+  border: 1px solid red;
+}
+
+.recipes_grid > div:nth-child(1) {
+  grid-area: big;
+}
+.recipes_grid > div:nth-child(2) {
+  grid-area: a;
+}
+.recipes_grid > div:nth-child(3) {
+  grid-area: b;
+}
+.recipes_grid > div:nth-child(4) {
+  grid-area: c;
+}
+.recipes_grid > div:nth-child(5) {
+  grid-area: d;
+}
+
+.recipes_sub_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid red;
+  justify-content: flex-end;
+}
+
+.recipes_sub_grid_text {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  height: 240px;
+  padding-left: 48px;
+  padding-top: 25px;
+  gap: 16px;
+  background-color: white;
+}
+
+.recipes_sub_grid_text > h1 {
+  color: black;
+}
+
+.recipes_sub_grid_text > p {
+  color: black;
+}
+
+span {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.baking_time {
+  display: flex;
+  gap: 11px;
+  width: 85px;
+  font-family: "Oswald";
+  font-weight: 350;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.baking_time_positioning {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: flex-end;
+}
+
+.recipes_containers {
+  display: flex;
+  align-items: flex-end;
+}
+
+.recipes_containers > div {
+  width: 100%;
+  height: 144px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.name_time {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 32px;
+  padding-left: 5px;
+  align-items: center;
+}
+
+.sub_container_text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: black;
+}
+
+.time {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.clock_icon {
+  padding-left: 60px;
+}
+
+.title {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: rgba(51, 51, 51, 0.5);
 }
