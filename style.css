@@ -724,7 +724,7 @@ span {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 2112px;
+  min-height: 2112px;
 }
 
 .process_header {
@@ -824,7 +824,6 @@ span {
   width: 620px;
   margin-top: 235px;
   margin-right: 500px;
-  border: 1px solid red;
 }
 
 .recipes_grid_header > p {
@@ -890,7 +889,6 @@ span {
   display: grid;
   width: 1170px;
   height: 736px;
-  border: 1px solid red;
   margin-left: 55px;
 
   grid-template-columns: 570px 270px 270px;
@@ -902,10 +900,6 @@ span {
   grid-template-areas:
     "big a b"
     "big c d";
-}
-
-.recipes_grid > div {
-  border: 1px solid red;
 }
 
 .recipes_grid > div:nth-child(1) {
@@ -928,14 +922,15 @@ span {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border: 1px solid red;
   justify-content: flex-end;
+  background-image: url("./images/baking/grid_cupcake.webp");
+  background-size: cover;
+  background-position: -80px -150px;
 }
 
 .recipes_sub_grid_text {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
   height: 240px;
   padding-left: 48px;
   padding-top: 25px;
@@ -982,6 +977,9 @@ span {
 .recipes_containers {
   display: flex;
   align-items: flex-end;
+  background-image: url("./images/baking/grid_cupcake.webp");
+  background-size: cover;
+  background-position: -70px -100px;
 }
 
 .recipes_containers > div {
@@ -1034,4 +1032,45 @@ span {
   line-height: 32px;
   letter-spacing: 0px;
   color: rgba(51, 51, 51, 0.5);
+}
+
+.explore_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore_block_bottom > button {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.explore_block_bottom {
+  margin-left: 55px;
+}
+
+.professional_bakers {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 1px solid red;
+  margin-top: 192px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(245, 211, 171, 1);
+}
+
+.professional_bakers_text {
+  margin-top: 192px;
+  width: 470px;
+  height: 624px;
+  border: 1px solid blue;
+}
+
+.professional_bakers_image {
+  margin-top: 192px;
+  border: 1px solid red;
+  width: 470px;
+  height: 624px;
 }

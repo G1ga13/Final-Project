@@ -21,14 +21,14 @@ up.addEventListener("click", () => {
   }
 });
 
-let exploreBtn = document.querySelector(".explore");
-let exploreMore = document.querySelector(".explore_more");
+document.querySelectorAll(".explore").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let block = btn.closest(".explore_block");
+    let more = block.querySelector(".explore_more");
 
-exploreBtn.addEventListener("click", function () {
-  exploreMore.classList.toggle("hidden");
-  if (exploreMore.classList.contains("hidden")) {
-    exploreBtn.textContent = "EXPLORE";
-  } else {
-    exploreBtn.textContent = "SHOW LESS";
-  }
+    more.classList.toggle("hidden");
+    btn.textContent = more.classList.contains("hidden")
+      ? "EXPLORE"
+      : "SHOW LESS";
+  });
 });
